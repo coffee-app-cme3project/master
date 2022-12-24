@@ -8,7 +8,8 @@ import Subscripton from './Components/Home/Subscription'
 import Login from './Components/Signup/Login'
 import SignupInfo from './Components/Signup/SignupInfo'
 import Signup from './Components/Signup/Signup'
-import CoffeeMenu from './Components/OrderOnline/CoffeeMenu'
+import CoffeeMenu from './Components/OrderOnlineMenu/CoffeeMenu'
+import SingleProduct from './Components/OrderOnlineMenu/SingleProduct'
 import {BrowserRouter as Router, Switch,Route } from 'react-router-dom';
 import { AuthProvider } from "./context/AuthContext";
 import ProtectedPage from "./utils/ProtectedPage";
@@ -35,6 +36,7 @@ return (
 			<Route path="/Signup" component={Signup}/>
 			<Route path="/SignupInfo" component={SignupInfo}/>
 			<Route path="/CoffeeMenu" component={CoffeeMenu}/>
+			<Route path="/singleproduct/:id" component={SingleProduct}/>
 
 
 			</Switch>

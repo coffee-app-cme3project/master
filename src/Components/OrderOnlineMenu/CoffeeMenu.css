@@ -1,0 +1,12 @@
+.font{
+	font-family:Noto Sans Tai Tham;
+}
+
+.Blu {
+	position: absolute;
+	width: 100%;
+	height: 70rem;
+	backdrop-filter: blur(7px);
+	background: linear-gradient(251.16deg, rgba(20, 20, 20, 0.20) 0%, rgba(20, 20, 20, 0.20) 62.81%, rgba(20, 20, 20, 0.20) 100%);
+	border-radius: 10px;
+}

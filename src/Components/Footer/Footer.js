@@ -15,9 +15,9 @@ import {BsYoutube} from 'react-icons/bs'
 export default function Footer() {
 return (
 
-<div className="flex  flex-col items-center justify-center text-[rgba(25,14,3,1.00)]  bg-white">
+<div className=" text-[rgba(25,14,3,1.00)]  bg-white">
 		
-	<div className=" grid grid-cols-4 gap-x-[2rem] gap-y-5 pt-7 mt-7 pb-8 mb-[5rem] ">
+	<div className=" grid grid-cols-4  py-[3rem] px-[9rem] my-[2rem] ">
 		
 		{ /* LATEELI Logo */ }
 		<div className="flex flex-row">

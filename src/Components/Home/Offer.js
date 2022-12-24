@@ -3,16 +3,15 @@ import ImgAsset from '../../public'
 import Img2 from '../../public/CoffeeApp_Latte.png'
 import Espresso from '../../public/CoffeeApp_Espresso.png'
 import IceCoffee from '../../public/CoffeeApp_IceCoffee.png'
-// import Products from "../OrderOnline/Products";
-// import Product from "./Product";
+import {MdKeyboardArrowRight} from 'react-icons/md'
 
 export default function Types(){
 
     return(
 
-<div className="">
+<div className="pt-[8rem]">
     <div > 
-        <h2 className='text-center pb-[3rem] pt-[5rem] text-[25px] font-semibold'>OFFERS OF THE DAY</h2>
+        <h2 className='text-center pb-[3rem]  text-[25px] font-semibold'>OFFERS OF THE DAY</h2>
     </div>
     
 <div className="flex items-center justify-center  ">
@@ -31,6 +30,8 @@ export default function Types(){
             <img className=' h-[27rem] w-[22rem] rounded' src = {IceCoffee } />
             <p className='text-center '>Ice Coffe</p>
         </div>
+
+        
     
      {/* {
        Products.map((curElem) =>{
@@ -40,7 +41,13 @@ export default function Types(){
     
     
     </div> 
+ 
 </div>
+    <div className='flex text-lg items-center justify-center pt-10 text-stone-500 font-semibold' >
+        <p>More</p>
+        <MdKeyboardArrowRight className="text-black"></MdKeyboardArrowRight>
+   </div>
+   
 </div> 
 );
 }

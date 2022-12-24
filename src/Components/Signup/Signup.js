@@ -57,7 +57,7 @@ export default function Signup() {
                     onChange={e => setPassword2(e.target.value)}
                     placeholder='Confirm Password' 
                     required />
-                    <p className='text-red'>{password2 !== password ? "Passwords do not match" : ""}</p>
+                    <p className='text-red-600'>{password2 !== password ? "Passwords do not match" : ""}</p>
 
                 <button className='m-5 bg-[rgba(255,149,0,1.00)] w-[200px] h-[3rem] rounded-md'>Signup</button>
             

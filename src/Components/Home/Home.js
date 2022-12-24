@@ -5,6 +5,7 @@ import Snacks from "./Snacks";
 import Subscripton from "./Subscription";
 import Types from "./Offer";
 import Footer from "../Footer/Footer";
+import Suprise from "./Suprise";
 import "../../global.css"
 import { useContext } from "react";
 import AuthContext from "../../context/AuthContext";
@@ -17,7 +18,7 @@ export default function Header() {
 	
 	return (
 
-		<div className="relative .fontForText font-medium ">
+		<div className="relative .fontForText font-medium  ">
 		 {user && <UserInfo user={user} />}
 	
 			
@@ -36,6 +37,7 @@ export default function Header() {
 			<Coffee></Coffee>
 			<Types></Types>
 			<Snacks></Snacks>
+			<Suprise></Suprise>
 			<Subscripton></Subscripton>
 			<Footer />
 

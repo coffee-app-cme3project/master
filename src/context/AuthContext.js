@@ -2,6 +2,7 @@ import { createContext, useState, useEffect } from "react";
 import jwt_decode from "jwt-decode";
 import { useHistory } from "react-router-dom";
 
+
 const AuthContext = createContext();
 
 export default AuthContext;
@@ -21,7 +22,7 @@ export const AuthProvider = ({ children }) => {
 
   const history = useHistory();
 
-  // If the user is present is the database (credentials are valid), 
+  // If the user is present in the database (credentials are valid), 
   // the user is logged in. 
   const loginUser = async (username, password) => {
     const response = await fetch("http://127.0.0.1:8000/api/token/", {
