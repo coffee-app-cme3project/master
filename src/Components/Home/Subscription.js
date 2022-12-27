@@ -11,7 +11,7 @@ return (
     <div className="float-right ml-5">
         <img className='rounded' src = {Img} />
     </div>
-        <h2 className='text-white text-[25px] font-semibold'>Subscription</h2>
+        <h2 className='text-white text-[25px] font-semibold'>SUBSCRIPTON</h2>
         <p className='flex py-[2rem] pr-[6rem] text-white'>Never run out of your favorite coffees and Snacks.  With our auto-delivery subscription. Select how often your products arrive, pause and cancel anytime.</p>
         <button className=" bg-white text-black  opacity-85 text-[15px] p-4 rounded  mt-3">Shop Coffee Subscripton</button>
         

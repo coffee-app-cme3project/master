@@ -9,11 +9,13 @@ import {RiUser3Fill } from 'react-icons/ri';
 import { useContext } from "react";
 import AuthContext from "../../context/AuthContext"
 import "../../global.css"
+import { useStateValue } from '../../context/StateProvider';
 
 
 
 export default function Navbar () {
   const { user, logoutUser } = useContext(AuthContext);
+  const [{basket}, dispatch] = useStateValue();
 
 return (
 
@@ -57,15 +59,17 @@ return (
       )}
    
       <div>
+      <Link to='Checkout'>
       <MdShoppingCart className=' w-9 h-7 mt-1 text-white relative  '/>
-      <div className='rounded-full bg-red-700 flex flex-col items-center justify-center absolute mt-[-22px] ml-[17px] p-2.5' style={{ 
-        color: "white", 
+      <div className='rounded-full bg-amber-400 flex flex-col items-center justify-center absolute mt-[-22px] ml-[17px] p-2.5' style={{ 
+        color: "black", 
         width: "1rem", 
         height: "1rem", 
         transform: "translate(25%, 25%)",
         }}>
-        3
+        {basket?.length}
       </div>
+      </Link>
       </div>
       
     </ul>

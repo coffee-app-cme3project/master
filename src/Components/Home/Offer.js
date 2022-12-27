@@ -4,7 +4,6 @@ import Img2 from '../../public/CoffeeApp_Latte.png'
 import Espresso from '../../public/CoffeeApp_Espresso.png'
 import IceCoffee from '../../public/CoffeeApp_IceCoffee.png'
 import {MdKeyboardArrowRight} from 'react-icons/md'
-
 export default function Types(){
 
     return(

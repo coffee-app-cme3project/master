@@ -11,7 +11,7 @@ return(
     </div>
     
     <div>
-        <h2 className='flex text-white py-[2rem] '>Coffee</h2>
+        <h2 className='flex text-white py-[2rem] '>COFFEE</h2>
         <p className='text-white font-normal pr-[8rem] flex'>Drinking coffee is an enjoyable habit for coffee lovers.
             You can enjoy ordering your coffee without needing to 
             leave your desk at work. Just click on order, choose your 
