@@ -12,7 +12,7 @@ import { getBasketTotal } from '../../reducer'
 const Subtotal = () => {
     const [{basket}, dispatch] = useStateValue();
   return (
-    <div className=' absolute w-[20%] ml-[72%] mt-[10px] bg-white text-black p-12   text-center  leading-10'>
+    <div className=' relative w-[20%] ml-[70%] bg-white text-black p-12 rounded-lg   text-center  leading-10'>
             <p className=''>Payment Method:</p>
             <div className=' flex text-12 gap-4 '>
                  <FaCcPaypal size={35}/>

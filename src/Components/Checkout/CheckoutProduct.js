@@ -9,9 +9,9 @@ const CheckoutProducts = ({id,image,title,price}) => {
 
 
   
-    <div className='relative lg:flex text-white m-[1rem] lg:ml-[13rem] leading-10'>
+    <div className='relative float-left w-[50%] block lg:flex text-white m-[1rem] lg:ml-[13rem] leading-10'>
       
-        <img className='rounded h-[20rem] w-[17rem] m-13 object-contain ' src = {image} />
+        <img className='rounded h-[20rem] w-[17rem] mx-13  ' src = {image} />
         <hr></hr>
 
        
