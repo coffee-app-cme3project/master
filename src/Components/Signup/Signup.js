@@ -31,11 +31,15 @@ export default function Signup() {
         
     </div>
     
-    <div className='relative flex flex-col items-center justify-center pt-[8rem]  '>
-            <p className='m-5 text-white font-bold text-3xl'>SignUp</p>
+    <div className='relative flex flex-col items-center justify-center mt-[6rem]  '>
+            <p className=' text-white font-bold text-3xl'>SignUp</p>
         
             <form onSubmit={handleSubmit} className = 'flex flex-col text-white items-center justify-center '>
-                
+            <input className='p-4 m-5 text-black h-9 w-[20rem] rounded-md h-[3rem] opacity-95' 
+                type="email"
+                name="email" 
+                id="email" 
+                placeholder="Email"   />
                 <input className='p-4 m-5 text-black h-9 w-[20rem] rounded-md h-[3rem] opacity-95' 
                     type='text' 
                     id='username'

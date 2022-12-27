@@ -35,7 +35,11 @@ return (
         <p className=' text-white font-bold text-3xl m-2'>Login</p>
         
             <form onSubmit={handleSubmit} className = 'flex flex-col text-white items-center justify-center m-5  '>
-                
+            <input className='p-4 m-5 text-black h-9 w-[20rem] rounded-md h-[3rem] opacity-95' 
+                type="email"
+                name="email" 
+                id="email" 
+                placeholder="Email"   />
                 <input className='p-4 m-5 text-black h-9 w-[20rem] rounded-md h-[3rem] opacity-95' 
                 type="text"
                 name="username" 
