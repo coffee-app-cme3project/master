@@ -2,9 +2,9 @@ name: final pipeline for coffee
 
 on:
   push:
-    branches: [ "front-end" ]
+    branches: [ "front-end-final" ]
   pull_request:
-    branches: [ "front-end" ]
+    branches: [ "front-end-final" ]
 
 
 
