@@ -1,4 +1,4 @@
-name: final pipeline for coffee
+name: front-end-final pipeline for coffee
 
 on:
   push:
