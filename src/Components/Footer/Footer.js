@@ -17,18 +17,18 @@ return (
 
 <div className=" text-[rgba(25,14,3,1.00)]  bg-white">
 		
-	<div className=" grid grid-cols-4  py-[3rem] px-[9rem] my-[2rem] ">
+	<div className=" grid grid-cols-1 gap-y-12  text-center md:text-left p-12  lg:grid-cols-4 md:grid-cols-2  md:py-[3rem] md:px-[9rem] md:my-[2rem] ">
 		
 		{ /* LATEELI Logo */ }
 		<div className="flex flex-row">
 			<p className='LATEEL'>LATEELI</p>
-			<img className='Ellipse1' src = {ellipse} />
+			<img className='Ellipse1 ' src = {ellipse} />
 			<img className='Ellipse2' src = {ellipse2} />
 		</div>
 
 		{/* TERMS */}
 		<div>
-			<span className='text-lg font-semibold '>SITE TERMS </span>
+			<span className='text-lg font-semibold'>SITE TERMS </span>
 			<p className=''><br />Gift Card Terms<br /><br />Privacy Policy<br /><br />Student Discount<br /></p>
 		</div>
 		

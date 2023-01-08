@@ -24,7 +24,7 @@ export default function Signup() {
 
 
     <div className="relative font ">
-    <img className='w-full absolute h-[45rem] object-cover overflow-hidden  ' src={ImgAsset.CoffeeApp_nathandumlao6VhPY27jdpsunsplash1} />
+    <img className='w-full md:h-[45rem] absolute object-cover overflow-y-hidden min-h-screen' src={ImgAsset.CoffeeApp_nathandumlao6VhPY27jdpsunsplash1} />
     <div className='flex flex-col items-center'>
         <div className='Rectangle40 '  />
         <div className='Bluredrec' />
@@ -36,21 +36,21 @@ export default function Signup() {
         
             <form onSubmit={handleSubmit} className = 'flex flex-col text-white items-center justify-center '>
                 
-                <input className='p-4 m-5 text-black h-9 w-[20rem] rounded-md h-[3rem] opacity-95' 
+                <input className='p-4 m-5 text-black h-9 w-[18em] md:w-[20em] rounded-md h-[3em] opacity-95' 
                     type='text' 
                     id='username'
                     onChange={e => setUsername(e.target.value)} 
                     name='username' 
                     placeholder="Username"
                     required  />
-                <input className='p-4  text-Black m-5 h-9 text-black w-[20rem] rounded-md h-[3rem]' 
+                <input className='p-4 m-5 text-black h-9 w-[18em] md:w-[20em] rounded-md h-[3em] opacity-95' 
                     type='password' 
                     name='password' 
                     id='password'
                     onChange={e => setPassword(e.target.value)}
                     placeholder='password' 
                     required />
-                <input className='p-4  text-Black m-5 h-9 text-black w-[20rem] rounded-md h-[3rem]' 
+                <input className='p-4 m-5 text-black h-9 w-[18em] md:w-[20em] rounded-md h-[3em] opacity-95' 
                     type='password'
                     name='password2'  
                     id='password2'
@@ -67,7 +67,7 @@ export default function Signup() {
             
                     
                 
-            <p className='text-white m-3 text-center '> By Signing up, <br/>you agree to our terms and privacy policy.</p>
+            <p className='text-white m-3 text-center px-8 md:px-0'> By Signing up, <br/>you agree to our terms and privacy policy.</p>
             </div>
         </div>
     </div>

@@ -6,41 +6,10 @@ import { Link } from 'react-router-dom';
 
 
 const Products = ({products}) => {
-//     const [menuList, setProducts] = useState([]);
-//     const [selectedCategory, setSelectedCategory] = useState();
-
-// // Add default value on page load
-// useEffect(() => {
-//     setProducts(products);
-// }, []);
-
-//  // Function to get filtered list
-//     function getFilteredList() {
-//         //Avoid filter when selectedCategory is null
-//         if (!selectedCategory) {
-//           return menuList;
-//         }
-//         return menuList.filter((item) => item.category === selectedCategory);
-//       }
-
-//     //Avoid duplicate function calls with useMemo
-//       var filteredList = useMemo(getFilteredList, [selectedCategory, menuList]);
-
-//       function handleCategoryChange(event) {
-//         setSelectedCategory(event.target.value);
-//      }
-
     return (
      
             <div className='text-center bg-gray-100 min-h-screen  pt-[2rem]  text-[25px] font-semibold'>COFFEE MENU
-        {/* <select className='flex ml-12'
-        name="category-list"
-        id="category-list"
-        onChange={handleCategoryChange}>
-         <option value="">All</option>
-         <option value="">Snacks</option>
-         <option value="">Coffee</option>
-      </select> */}
+
     <div className="grid lg:px-[60px] lg:grid-cols-4 md:px-[20px]   md:grid-cols-3  gap-x-[2rem] gap-y-12 pt-3 m-12 pb-12  ">
                 {
                     products?.map((prod) => (

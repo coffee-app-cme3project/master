@@ -24,7 +24,7 @@ export default function Login() {
 return (
 
     <div className="relative font  ">
-        <img className='w-full lg:h-[45rem] absolute object-cover overflow-hidden sm:overflow-hidden min-h-screen  ' src={ImgAsset.CoffeeApp_nathandumlao6VhPY27jdpsunsplash1} />
+        <img className='w-full md:h-[45rem] absolute object-cover overflow-y-hidden min-h-screen ' src={ImgAsset.CoffeeApp_nathandumlao6VhPY27jdpsunsplash1} />
     <div className='flex flex-col items-center justify-center  '>
     <div className='Bluredrec' />
     </div>
@@ -36,12 +36,12 @@ return (
         
             <form onSubmit={handleSubmit} className = 'flex flex-col text-white items-center justify-center m-5  '>
                 
-                <input className='p-4 m-5 text-black h-9 w-[20rem] rounded-md h-[3rem] opacity-95' 
+                <input className='p-4 m-5 text-black h-9 w-[18em] md:w-[20em] rounded-md h-[3em] opacity-95' 
                 type="text"
                 name="username" 
                 id="username" 
                 placeholder="Username"   />
-                <input className=' p-4 text-Black m-5 h-9 text-black w-[20rem] rounded-md h-[3rem]' 
+                <input className=' p-4 text-Black m-5 h-9 text-black w-[18em] md:w-[20em] rounded-md h-[3rem]' 
                 type="password"
                 name="password"  
                 id="password" 
