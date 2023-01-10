@@ -24,7 +24,7 @@ export const AuthProvider = ({ children }) => {
 
   // If the user is present in the database (credentials are valid), 
   // the user is logged in. 
-  const loginUser = async (username, password) => {
+  const loginUser = async (username, email, password) => {
     const response = await fetch("http://127.0.0.1:8000/api/token/", {
       method: "POST",
       headers: {
@@ -32,7 +32,9 @@ export const AuthProvider = ({ children }) => {
       },
       body: JSON.stringify({
         username,
-        password
+        password,
+        email,
+
       })
     });
     const data = await response.json();
@@ -48,7 +50,7 @@ export const AuthProvider = ({ children }) => {
   };
   
   // This function registers the user in the database. 
-  const registerUser = async (username, password, password2) => {
+  const registerUser = async (username, password, password2,email) => {
     const response = await fetch("http://127.0.0.1:8000/api/register/", {
       method: "POST",
       headers: {
@@ -57,7 +59,8 @@ export const AuthProvider = ({ children }) => {
       body: JSON.stringify({
         username,
         password,
-        password2
+        password2,
+        email,
       })
     });
     if (response.status === 201) {

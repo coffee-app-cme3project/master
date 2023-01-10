@@ -50,7 +50,7 @@ const INITIAL_STATE = {
             },
             {
               id: 4,
-              name: "Cream Coffee Latte",
+              name: "Creamy Coffee Latte",
               image:require( '../../public/tetiana-shyshkina-4Lqjr8gu_bg-unsplash.jpg'),
               price: "5.00",
               Sugar:"Sugar+",
@@ -123,20 +123,20 @@ const INITIAL_STATE = {
     snacks: [
       {
       id: 1,
-      name: "Latte",
+      name: "Chips",
       image:require( '../../public/snack_Banachips.jpg'),
       price: 5.00,
       },
     {
       id: 2,
-      name: "Ice Coffee",
+      name: "Cream Donuts",
       image:require( '../../public/snacks_Donuts.jpg'),
       price: 5.00,
     
     },
       {
         id: 3,
-        name: "Espresso",
+        name: "Dry Fruits (Peach)",
         image:require( '../../public/snack_Chips.jpg'),
         price:5.00,
       
@@ -144,7 +144,7 @@ const INITIAL_STATE = {
       },
       {
         id: 4,
-        name: "Latte",
+        name: "Chocolate Donut",
         image:require( '../../public/snacks_ChocolateDonuts.jpg'),
         price: "5.00",
       
@@ -152,14 +152,14 @@ const INITIAL_STATE = {
       },
         {
           id: 5,
-          name: "Latte",
+          name: "Dry Fruits (Orange)",
           image:require( '../../public/snacks_Orange.jpg'),
           price: "5.00",
         
         },
         {
           id: 6,
-          name: "Latte",
+          name: "Caramel Cupcakes",
           image:require( '../../public/snacks_pancakes.jpg'),
           price: "5.00",
         
@@ -175,7 +175,7 @@ const INITIAL_STATE = {
           },
           {
             id: 8,
-            name: "Latte",
+            name: "Strawberry Mousse",
             image:require( '../../public/snacks_strawberryMuesli.jpg'),
             price: "5.00",
   

@@ -13,7 +13,7 @@ const ProductSnacks = ({productDataSnacks,loadCurrentItemSnacks}) => {
 
     </div>
     <Link to ={`/singleproductsnacks/${productDataSnacks.id}`}>
-    <button onClick={()=> loadCurrentItemSnacks(productDataSnacks)} className='text-white bg-[rgba(45,24,5,1.00)]  text-[20px]  mt-2
+    <button onClick={()=> loadCurrentItemSnacks(productDataSnacks)} className='text-white bg-[rgba(45,24,5,1.00)]  text-[18px]  mt-2
     text-white  h-12 w-[9rem] rounded'>Add to cart</button>
     </Link>
   </div>

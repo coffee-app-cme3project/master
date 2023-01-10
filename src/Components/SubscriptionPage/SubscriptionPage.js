@@ -27,6 +27,12 @@ const SubscriptionPage = () => {
                             <input type="password" placeholder="Password"
                                 class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"/>
                 </div>
+
+                <div class="mt-4">
+                    <label class="block">Your Address</label>
+                            <input type="text" placeholder="Address"
+                                class="w-full px-4 py-2 h-[5em] mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"/>
+                </div>
                 <span class="text-xs text-red-400">Password must be same!</span>
                 <div class="flex">
                     <button class="w-full px-6 py-2 mt-4 text-white bg-[rgba(45,24,5,1.00)] rounded-lg hover:bg-blue-900">Subscribed</button>

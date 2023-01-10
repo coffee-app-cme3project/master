@@ -7,9 +7,14 @@ const ProductCoffee = ({productData,loadCurrentItem}) => {
   return (
     <div>
     <img className='rounded shadow-lg h-[360px] w-full p-2' src={productData.image}/>
+    <div className='flex justify-between text-lg px-4 py-1'>
+    <p>{productData.name}</p>
+    <p>{productData.price} €</p>
+
+    </div>
     <Link to ={`/singleproductcoffee/${productData.id}`}>
-    <button onClick={()=> loadCurrentItem(productData)} className='text-white bg-[rgba(45,24,5,1.00)]  text-[20px]  mt-2
-    text-white h-[4rem] w-[9rem] p-1  rounded'>{productData.name}</button>
+    <button onClick={()=> loadCurrentItem(productData)} className='text-white bg-[rgba(45,24,5,1.00)]  text-[17px]  mt-2
+    text-white h-[3rem] w-[9rem] p-1  rounded'>More Options</button>
     </Link>
   </div>
   )
