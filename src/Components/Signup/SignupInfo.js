@@ -28,7 +28,7 @@ return (
             
                     <button className='m-5 bg-[rgba(255,149,0,1.00)] text-white w-[200px] opacity-95 h-[3rem] rounded-md'>Register</button>
                 
-            <span className='text-white mt-3 text-center '> By Signing up, <br/>you agree to our terms and privacy policy.</span>
+                    <span className='text-white mt-3 text-center '> By Signing up, <br/>you agree to our terms and privacy policy.</span>
             </div>
         </div>
     </div>

@@ -9,15 +9,15 @@ const SnacksMenu = ({snacks}) => {
 return (
      
     <div className='text-center bg-gray-100  pt-[2rem]  text-[25px] font-semibold'>SNACKS MENU
-    <div className="grid pb-12 lg:px-[60px] lg:grid-cols-4 md:px-[20px] md:grid-cols-3   gap-x-[2rem] gap-y-12 pt-3 m-12  ">
-        {
-            snacks?.map((prod) => (
-              <ProductSnacks key={prod.id} productDataSnacks={prod}/>
-                )
-            )
-        }
-        
-    </div>
+        <div className="grid pb-12 lg:px-[60px] grid-cols lg:grid-cols-4 md:grid-cols-2  md:px-[20px] grid-cols gap-x-[2rem] gap-y-12 pt-3 m-12  ">
+                {
+                    snacks?.map((prod) => (
+                    <ProductSnacks key={prod.id} productDataSnacks={prod}/>
+                        )
+                    )
+                }
+                
+        </div>
     </div>
    
 )
@@ -25,12 +25,13 @@ return (
 }
 
 
-const mapStateToProps = (state,dispatch) => {
-console.log(state);
-return{
-    snacks: state.shop.snacks,
+    const mapStateToProps = (state,dispatch) => {
+    console.log(state);
+    return{
+        snacks: state.shop.snacks,
 
-}
-}
+    }
+    }
 
-export default connect(mapStateToProps)(SnacksMenu);
+
+    export default connect(mapStateToProps)(SnacksMenu);

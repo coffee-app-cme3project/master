@@ -6,7 +6,8 @@ import { useState, useContext } from "react";
 import AuthContext from "../../context/AuthContext";
 
 
-export default function Signup() {
+const Signup = () => {
+    
     const [username, setUsername] = useState("");
     const [Email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -20,22 +21,18 @@ export default function Signup() {
 
 
     return (
-
-
-
-
+    
     <div className="relative font ">
     <img className='w-full md:h-[45rem] absolute object-cover overflow-y-hidden min-h-screen ' src={ImgAsset.CoffeeApp_nathandumlao6VhPY27jdpsunsplash1} />
     <div className='flex flex-col items-center'>
-        <div className='Rectangle40 '  />
         <div className='Bluredrec' />
         
     </div>
     
-    <div className='relative flex flex-col items-center justify-center md:pt-[6rem] pt-[5rem]'>
+    <div className='relative flex flex-col items-center justify-center md:pt-[6rem] pt-[2rem]'>
             <p className=' text-white font-bold text-3xl'>SignUp</p>
         
-            <form onSubmit={handleSubmit} className = 'flex flex-col text-white items-center justify-center '>
+            <form onSubmit={handleSubmit} className = 'm-5 flex flex-col text-white items-center justify-center '>
             <input className='p-4 m-5 text-black h-9 w-[18em] md:w-[20em] rounded-md h-[3em] opacity-95' 
                 type="email"
                 name="email" 
@@ -79,4 +76,6 @@ export default function Signup() {
     </div>
     
 )
-    }
+}
+
+export default Signup

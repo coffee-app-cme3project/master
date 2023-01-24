@@ -24,7 +24,7 @@ export const AuthProvider = ({ children }) => {
 
   // If the user is present in the database (credentials are valid), 
   // the user is logged in. 
-  const loginUser = async (username, email, password) => {
+  const loginUser = async (username, password) => {
     const response = await fetch("http://127.0.0.1:8000/api/token/", {
       method: "POST",
       headers: {
@@ -33,7 +33,7 @@ export const AuthProvider = ({ children }) => {
       body: JSON.stringify({
         username,
         password,
-        email,
+
 
       })
     });
@@ -45,7 +45,7 @@ export const AuthProvider = ({ children }) => {
       localStorage.setItem("authTokens", JSON.stringify(data));
       history.push("/");
     } else {
-      alert("Something went wrong!");
+      alert("You have entered an invalid username or password!");
     }
   };
   
@@ -66,7 +66,7 @@ export const AuthProvider = ({ children }) => {
     if (response.status === 201) {
       history.push("/login");
     } else {
-      alert("Something went wrong!");
+      alert("Username already exists!");
     }
   };
 

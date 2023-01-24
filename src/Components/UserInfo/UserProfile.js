@@ -22,26 +22,26 @@ const UserProfile = () => {
       <button className='border-solid border-2 border-black w-[7rem] h-[2rem]  '>{user.username}</button>
       
       <div className='flex my-7 gap-3'> 
-      <HiOutlineNewspaper size={25}/>
-      <button>Orders</button>
+        <HiOutlineNewspaper size={25}/>
+        <button>Orders</button>
       </div>
       <div className='flex my-7 gap-3'> 
-      <AiFillStar size={25}/>
-      <button>Favourites</button>
+        <AiFillStar size={25}/>
+        <button>Favourites</button>
       </div>
       <div className='flex my-7 gap-3'> 
-      <BsFillBellFill size={25}/>
-      <button>Subscription</button>
+        <BsFillBellFill size={25}/>
+        <button>Subscription</button>
       </div>
 
       <div className='flex my-7 gap-3'> 
-      <FaClipboardCheck size={25}/>
-      <button>Reservation</button>
+        <FaClipboardCheck size={25}/>
+        <button>Reservation</button>
       </div>
       </div>
 
       <div className = 'pt-12 font-semibold pl-[10rem]'>
-      <h1>Orders</h1>
+        <h1>Orders</h1>
       </div>
       
 

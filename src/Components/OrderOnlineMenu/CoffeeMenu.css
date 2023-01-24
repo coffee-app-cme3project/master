@@ -13,18 +13,11 @@
 }
 
 
-@media screen and (max-width:980px) {
+@media screen and (max-width:600px) {
 	.Blure {
-	top: 55px;
+	top: 24px;
 	width: 375px;
 	height: 1000px;
+	overflow-x: hidden;
 	}
   }
-
-  /* @media screen and (max-width: 992px) {
-	.Blure {
-	top: 55px;
-	width: 560px;
-	height: 1000px;
-	}
-  } */

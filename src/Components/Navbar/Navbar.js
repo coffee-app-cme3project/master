@@ -14,11 +14,6 @@ import {connect} from 'react-redux'
 import {useState, useEffect} from "react";
 
 
-
-
-
-
-
 const Navbar = ({cart}) => {
   const { user, logoutUser } = useContext(AuthContext);
   const [cartCount, setCartCount] =useState(0)
@@ -43,7 +38,7 @@ return (
 
 
 <nav>
-<div className=" bg-[rgba(45,24,5,1.00)] text-sm sm:px-6 py-2.5  ">
+<div className=" bg-[rgba(45,24,5,1.00)] text-sm sm:px-6 py-4 lg:py-2">
     <div className='container flex flex-wrap items-center justify-between mx-auto .fontForText'>
       
       {/* left side of Navbar */}

@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 import AuthContext from '../../context/AuthContext';
 import { useContext } from "react";
 
-    
 
-export default function Login() {
+   
+const Login = () => {
 
     const { loginUser } = useContext(AuthContext);
     const handleSubmit = e => {
@@ -17,32 +17,21 @@ export default function Login() {
       username.length > 0 && loginUser(username, password);
     };
       
+    return (
 
-
-
-
-return (
-
-    <div className="relative font  ">
-        <img className='w-full md:h-[45rem] absolute object-cover overflow-y-hidden min-h-screen ' src={ImgAsset.CoffeeApp_nathandumlao6VhPY27jdpsunsplash1} />
+    <div className="relative font ">
+        <img className='w-full md:h-[45rem] absolute object-cover overflow-y-hidden min-h-screen overflow-x-hidden ' src={ImgAsset.CoffeeApp_nathandumlao6VhPY27jdpsunsplash1} />
     <div className='flex flex-col items-center justify-center  '>
-    <div className='Bluredrec' />
+        <div className='Bluredrec' />
     </div>
-            
     
-        
-        <div className='relative flex flex-col items-center justify-center pt-[10rem]  '>
+    <div className='relative flex flex-col items-center justify-center mt-[10rem]  '>
         <p className=' text-white font-bold text-3xl '>Login</p>
         
-            <form onSubmit={handleSubmit} className = 'flex flex-col text-white items-center justify-center m-5  '>
-                
-
-            <input className='p-4 m-5 text-black h-9 w-[18em] md:w-[20em] rounded-md h-[3em] opacity-95' 
-                type="email"
-                name="email" 
-                id="email" 
-                placeholder="Email" required/>
-                <input className='p-4 m-5 text-black h-9 w-[18em] md:w-[20em] rounded-md h-[3em] opacity-95' 
+        <form onSubmit={handleSubmit} className = 'flex flex-col text-white items-center justify-center m-5  '>
+        
+        
+             <input className='p-4 m-5 text-black h-9 w-[18em] md:w-[20em] rounded-md h-[3em] opacity-95' 
                 type="text"
                 name="username" 
                 id="username" 
@@ -67,3 +56,5 @@ return (
     
 )
 }
+
+export default Login 
