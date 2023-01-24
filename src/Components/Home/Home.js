@@ -27,7 +27,7 @@ export default function Header() {
 		</div>
 		
 		<div className='relative  text-white flex flex-col items-center justify-center h-[33rem]'>
-				<p className='font-bold text-3xl md:text-4xl m-3'>Group Order ?</p>
+				<p className='font-bold text-3xl md:text-4xl m-3'>Want Group Order ?</p>
 				<p className='m-3 text-2xl font-normal md:text-2xl'>We are here for you</p>
 				<Link to = "CoffeeMenu">
 				<button className='bg-white opacity-90 text-xl  m-3 ]
