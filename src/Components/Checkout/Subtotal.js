@@ -7,6 +7,7 @@ import { useStateValue } from '../../context/StateProvider';
 import {useHistory} from 'react-router-dom'; 
 import {useSelector} from 'react-redux'
 import {connect} from 'react-redux'
+import  {SiKlarna} from 'react-icons/si'
 
 const Subtotal = ({cart}) => {
     
@@ -35,6 +36,7 @@ const Subtotal = ({cart}) => {
                  <FaCcVisa size={35}/>
                  <FaCcMastercard size={35}/>
                  <SiSepa size={35}/>
+                <SiKlarna size={35}/>
             </div>
             <p>Delivery: 15 minutes</p>
             <p>Address: 256 code</p>

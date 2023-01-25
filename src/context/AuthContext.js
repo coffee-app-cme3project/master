@@ -50,7 +50,7 @@ export const AuthProvider = ({ children }) => {
   };
   
   // This function registers the user in the database. 
-  const registerUser = async (username, password, password2,email) => {
+  const registerUser = async (username, password, email) => {
     const response = await fetch("http://127.0.0.1:8000/api/register/", {
       method: "POST",
       headers: {
@@ -59,7 +59,6 @@ export const AuthProvider = ({ children }) => {
       body: JSON.stringify({
         username,
         password,
-        password2,
         email,
       })
     });
