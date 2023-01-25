@@ -6,7 +6,7 @@
 FROM node:13.12.0-alpine as builder
 # Set working directory
 WORKDIR /app
-# Copy all files from current directory to working dir in image
+# Copy all files from current directory to working dir in images
 COPY . .
 # install node modules and build assets
 RUN npm install
