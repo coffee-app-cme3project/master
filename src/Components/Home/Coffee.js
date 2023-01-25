@@ -12,7 +12,7 @@ return(
 
             <img className="rounded lg:float-right w-full  object-cover md:h-full md:w-[24rem] md:p-0 lg:mr-[5em] md:ml-[5em]" src = {ImgAsset.CoffeeApp_lukeporterzZfuH4lINlkunsplash1} alt="Coffee machine" />
      
-            <h2 className='text-white mb-[2rem] md:text-3xl mt-11 lg:mt-0 md:ml-[3.3em]'>COFFEE</h2>
+            <h2 className='text-white mb-[2rem] md:text-3xl mt-11 lg:mt-0 md:ml-[3.3em]'>Want COFFEE</h2>
             
             <p className='text-white tracking-wide text-left font-normal md:text-xl lg:pr-[7rem] md:text-left leading-9 flex md:ml-[5em] '>
                 Drinking coffee is an enjoyable habit for coffee lovers.
