@@ -1,4 +1,4 @@
-name: front-end-final pipeline for login_test_pipeline.
+name: front-end-final pipeline
 
 on:
   push:
