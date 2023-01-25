@@ -11,6 +11,7 @@ COPY package.json .
 RUN npm install
 # Copy all files from current directory to working dir in image
 COPY . .
+# build the code
 RUN npm run build
 # nginx state for serving content
 FROM nginx:alpine
