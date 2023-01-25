@@ -10,7 +10,6 @@ WORKDIR /app
 COPY . .
 # install node modules and build assets
 RUN npm install
-RUN ls -la
 RUN npm run build
 RUN ls -la
 
