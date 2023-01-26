@@ -36,7 +36,7 @@ const Subtotal = ({cart}) => {
                  <FaCcVisa size={35}/>
                  <FaCcMastercard size={35}/>
                  <SiSepa size={35}/>
-                <SiKlarna size={35}/> 
+                {/* <SiKlarna size={35}/>  */}
             </div>
             <p>Delivery: 15 minutes</p>
             <p>Address: 256 code</p>
