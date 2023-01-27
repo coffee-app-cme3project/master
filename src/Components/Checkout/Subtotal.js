@@ -61,4 +61,3 @@ const mapStateToProps = (state) => {
 export default connect(mapStateToProps)(Subtotal);
 
 
-//to be add later
